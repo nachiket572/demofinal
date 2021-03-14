@@ -1,0 +1,260 @@
+* {
+    margin : 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+  background-color:#000 !important;
+  font-family: 'Montserrat', sans-serif;
+  font-family: 'Sacramento', cursive;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.nav-item .nav-link {
+  font-family: 'Montserrat', sans-serif;
+  color: #FFF !important;
+  text-align: center;
+  font-weight: 600;
+  position: relative;
+}
+.nav-item .nav-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 2px;
+  width: 100%;
+  transform: scale(0);
+  transition: 0.5s;
+  transform-origin: center;
+  background-color: #FFF;
+}
+.nav-item .nav-link:hover::after {
+  transform: scaleX(1);
+}
+.nav-item .nav-link:hover {
+    font-weight: 900;
+}
+
+.navbar-brand {
+  color: #FFF !important;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: bold;
+  font-size: 2rem !important;
+}
+
+.navbar-toggler {
+    background-color: #FFF !important;
+}
+
+.nametxt {
+    font-family: 'Sacramento', cursive;
+    color: rgba(255, 255, 255, 1);
+    position: relative;
+    top: 350px;
+
+}
+.nametxt h1 {
+    font-size: 5rem;
+}
+.nametxt h2 {
+    font-size: 3rem;
+}
+
+.about {
+    background-color: #000;
+    color: #FFF;
+    text-align: center;
+    position: relative;
+    top: 800px;
+}
+.about p {
+    margin-top: 30px;
+    color: rgba(255, 255, 255, 0.7);
+}
+.about h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2.5rem;
+  text-align: center;
+  font-weight: bold;
+  color: rgba(255, 255, 255, 0.9);
+}
+.about .setting h2 {
+    text-align: center !important;
+    margin-top: 30px;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.about .setting p {
+    text-align: justify;
+}
+
+.row {
+    margin-top: 50px;
+}
+
+.icon {
+    color: #FFF;
+}
+
+.gallery {
+    margin-top: 50px;
+}
+.gallery h1 {
+    margin-bottom: 40px;
+}
+.carousel-caption h4 {
+    padding-bottom: 15px;
+}
+
+.carousel-indicators li {
+    background-color: #808080 !important;
+}
+
+.card {
+    background-color: #000 !important;
+}
+
+.card h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold !important;
+  color: rgba(255, 255, 255, 0.9);
+  padding-top: 35px;
+}
+
+.form-control {
+  background-color: transparent !important;
+  outline: transparent !important;
+}
+
+.btn {
+    margin-top: 20px;
+}
+
+
+label.message {
+    padding-top: 15px;
+}
+
+form {
+  margin-top: 55px;
+  text-align: left;
+}
+
+input {
+  color: #FFF !important;
+}
+textarea {
+  color: #FFF !important;
+}
+
+input[type=text]:focus {
+  border-color: #FFF !important;
+  box-shadow: 0 0 8px 0 #FFF;
+}
+input[type=email]:focus {
+  border-color: #FFF !important;
+  box-shadow: 0 0 8px 0 #FFF;
+}
+
+input[type=checkbox] {
+  margin-top: 30px;
+}
+
+textarea:focus {
+  border-color: #FFF !important;
+  box-shadow: 0 0 8px 0 #FFF !important;
+}
+
+.btn-light {
+    font-weight: 500 !important;
+    transition: 0.5s;
+}
+
+.btn-light:hover {
+  border-color: #808080 !important;
+  background-color: #808080 !important;
+}
+
+label.checkset {
+    position: relative;
+    bottom: 1px;
+}
+.h1set h3 {
+    text-align: justify;
+}
+.h1set p {
+    text-align: justify;
+}
+
+.fa-color {
+    color: #000;
+    margin-right: 22px;
+}
+.footer-copyright {
+    padding-bottom: 10px;
+}
+.footer-copyright p {
+    color: #000;
+}
+
+.fonta {
+    padding-top: 30px;
+}
+@media (max-width: 992px) {
+
+  .h1set {
+        position: relative;
+        left: 90px;
+  }
+
+  .iconset {
+        position: relative;
+        left: 120px;
+  }
+
+}
+
+@media (max-width: 768px) {
+
+  .h1set {
+        position: relative;
+        left: 35px;
+  }
+
+  .iconset {
+        position: relative;
+        left: 60px;
+  }
+
+}
+
+@media (max-width: 530px) {
+
+  .h1set {
+        position: relative;
+        left: 20px;
+  }
+
+  .iconset {
+        position: relative;
+        left: 40px;
+  }
+  @media (max-width: 530px) {
+
+    .h1set {
+          position: relative;
+          left: 5px;
+    }
+
+    .iconset {
+          position: relative;
+          left: 20px;
+    }
+
+}
